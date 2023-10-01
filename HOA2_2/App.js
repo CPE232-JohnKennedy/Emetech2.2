@@ -38,7 +38,7 @@ export default function App() {
     >
       <View style={styles.appContainer}>
         <View style={styles.headerContainer}>
-          <Text style={styles.Title}>2023 Goals</Text>
+          <Text style={styles.Title}>My Goals</Text>
           <Text style={styles.subHeader}>Your Milestone Tracker</Text>
         </View>
 
@@ -63,9 +63,9 @@ export default function App() {
                 );
               }}
             >
-              <View style={styles.goalItem}>
+              <ScrollView style={styles.goalItem}>
                 <Text style={styles.goalText}>{itemData.item.value}</Text>
-              </View>
+              </ScrollView>
             </TouchableOpacity>
           )}
         />
@@ -85,10 +85,13 @@ const styles = {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 15,
+    marginBottom: 55,
     borderBottomWidth: 1,                   //editt
     borderBottomColor: '#282321',
-    bottom: "30%"
+    minHeight: 40,
+    maxHeight: 40,
+
+
   },
   inputText: {
     borderWidth: 2,
@@ -100,6 +103,9 @@ const styles = {
     borderRadius: 8,
     backgroundColor: '#B3AEA4',
     fontSize: 16,
+    minHeight: 40,
+    maxHeight: 40,
+    bottom: -30
   },
   goalContainer: {
     flex: 5,
@@ -140,5 +146,6 @@ const styles = {
     borderWidth: 1,
     borderRadius: 8,
     marginBottom: 10,
+
   },
 };
