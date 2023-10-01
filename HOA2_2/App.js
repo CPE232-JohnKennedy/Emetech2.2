@@ -77,7 +77,7 @@ export default function App() {
 const styles = {
   appContainer: {
     flex: 1,
-    paddingTop:50,
+    paddingTop: 50,
     paddingHorizontal: 16,
   },
   inputContainer: {
@@ -88,6 +88,7 @@ const styles = {
     marginBottom: 15,
     borderBottomWidth: 1,                   //editt
     borderBottomColor: '#282321',
+    bottom: "30%"
   },
   inputText: {
     borderWidth: 2,
@@ -119,6 +120,7 @@ const styles = {
     marginBottom: 1,
     borderWidth: 2,
     borderRadius: 20,
+
   },
   Title: {
     fontSize: 30,
