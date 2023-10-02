@@ -63,9 +63,11 @@ export default function App() {
                 );
               }}
             >
-              <ScrollView style={styles.goalItem}>
-                <Text style={styles.goalText}>{itemData.item.value}</Text>
-              </ScrollView>
+              <View>
+                <ScrollView style={styles.goalItem}>
+                  <Text style={styles.goalText}>{itemData.item.value}</Text>
+                </ScrollView>
+              </View>
             </TouchableOpacity>
           )}
         />
