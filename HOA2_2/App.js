@@ -85,11 +85,13 @@ const styles = {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 55,
-    borderBottomWidth: 1,                   //editt
+    marginBottom: 13,  // Adjust the height of the scrollable content
+    borderBottomWidth: 2,      // adjust for margin line bottom             //editt
     borderBottomColor: '#282321',
-    minHeight: 40,
+    minHeight: 80,
     maxHeight: 40,
+    
+    
 
 
   },
@@ -105,7 +107,7 @@ const styles = {
     fontSize: 16,
     minHeight: 40,
     maxHeight: 40,
-    bottom: -30
+    bottom: -2
   },
   goalContainer: {
     flex: 5,
